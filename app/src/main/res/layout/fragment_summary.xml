@@ -27,16 +27,53 @@
         app:layout_constraintTop_toBottomOf="@id/summary_card_layout" />
 
     <TextView
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="You'll receive a confirmation email \nwith order details"
         android:textColor="@color/black"
-        android:layout_marginTop="16dp"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="@+id/thanks_text"
         app:layout_constraintStart_toStartOf="@+id/thanks_text"
         app:layout_constraintTop_toBottomOf="@id/thanks_text" />
 
+    <Button
+        android:layout_width="205dp"
+        android:layout_height="68dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textSize="33sp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="649dp"
+        android:layout_height="82dp"
+        android:hint="items ordered"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="31sp"
+            android:textAllCaps="true"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textField"
+        app:layout_constraintTop_toBottomOf="@+id/textField"
+        tools:listitem="@layout/entry_total_items_list"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
