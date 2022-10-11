@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#2196F3</color>
     <color name="title_blue">#1565C0</color>
+    <color name="btn_color">#64B5F6</color>
     <color name="blue_background">#5564B5F6</color>
     <color name="textColor">#707070</color>
     <color name="gray_background">#EEEBEB</color>

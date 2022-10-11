@@ -11,4 +11,9 @@
     <string name="how_to_connect3">3. Tab on <b>Link Cart</b></string>
     <string name="how_to_connect4">4. Point your phone to this screen \nto capture the code</string>
     <string name="reload">Reload</string>
+    <string name="you_re_all_set">You\'re all set</string>
+    <string name="you_re_all_set2">Just return your cart</string>
+    <string name="you_re_all_set3">&amp; we\'ll email your receipt</string>
+    <string name="view_receipt">View Receipt</string>
+    <string name="logout">Logout</string>
 </resources>
