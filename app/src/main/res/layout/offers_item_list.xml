@@ -38,10 +38,8 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="-4dp"
-            android:layout_marginTop="-3dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:background="@drawable/discount_tab"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -51,11 +49,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="-8dp"
+            android:layout_marginTop="24dp"
             android:rotation="-50"
             android:text="Sale 20%"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/imageView4"
             app:layout_constraintTop_toTopOf="@+id/imageView4" />
 

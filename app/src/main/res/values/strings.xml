@@ -5,4 +5,10 @@
     <string name="welcome_nlet_s_get_started">Welcome!\nLet\'s get started</string>
     <string name="sign_in_with_your_qr_code_nin_the_mobile">Sign in with your QR code\nin the mobile</string>
     <string name="you_re_agreeing_to_our_terms">you\'re agreeing to our Terms</string>
+    <string name="to_connect_the_cart_on_your_phone">To connect the cart on your phone:</string>
+    <string name="how_to_connect1">1. Open the app on your phone\n2. Tap <b>Menu</b></string>
+    <string name="how_to_connect2">&amp; select <b>Link Cart</b></string>>
+    <string name="how_to_connect3">3. Tab on <b>Link Cart</b></string>
+    <string name="how_to_connect4">4. Point your phone to this screen \nto capture the code</string>
+    <string name="reload">Reload</string>
 </resources>
