@@ -100,19 +100,21 @@
         app:layout_constraintStart_toEndOf="@+id/textView27"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/containedButton"
         android:layout_width="270dp"
         android:layout_height="80dp"
         android:layout_marginEnd="300dp"
         android:backgroundTint="@color/white"
         android:text="@string/logout"
+        android:textAllCaps="false"
         android:textColor="@color/btn_color"
         android:textSize="30sp"
+        app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="@+id/outlinedButton"
         app:layout_constraintTop_toTopOf="@+id/outlinedButton" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/outlinedButton"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="270dp"
@@ -122,6 +124,10 @@
         android:textSize="30sp"
         android:textColor="@color/white"
         android:text="@string/view_receipt"
+        app:strokeColor="@color/white"
+        android:textAllCaps="false"
+        app:strokeWidth="6dp"
+        app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
