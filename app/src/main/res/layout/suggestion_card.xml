@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/font"
-            android:text="Think to make Pizza?"
+            android:text="Do you want to make Pizza?"
             android:textColor="@color/black"
             android:textSize="31sp"
             android:textStyle="bold"
