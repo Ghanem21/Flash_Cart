@@ -14,4 +14,7 @@ class MainActivity : AppCompatActivity() {
         navHostFragment.navController
 
     }
+
+    override fun onBackPressed() {
+    }
 }

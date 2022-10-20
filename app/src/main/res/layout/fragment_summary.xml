@@ -23,9 +23,10 @@
             android:id="@+id/thanks_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:text="THANKS FOR YOUR SHOPPING"
             android:textColor="@color/black"
-            android:layout_marginTop="89dp"
+            android:fontFamily="@font/font"
             android:textSize="35dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/summary_card_layout"
@@ -41,19 +42,22 @@
             android:text="You'll receive a confirmation email \nwith order details"
             android:textColor="@color/black"
             android:textSize="35sp"
+            android:fontFamily="@font/font"
             app:layout_constraintEnd_toEndOf="@+id/thanks_text"
             app:layout_constraintStart_toStartOf="@+id/thanks_text"
             app:layout_constraintTop_toBottomOf="@id/thanks_text" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/logout_btn"
             android:layout_width="205dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="8dp"
             android:text="Logout"
+            android:fontFamily="@font/font"
             android:textAllCaps="false"
             android:textSize="33sp"
             app:cornerRadius="8dp"
-            android:padding="8dp"
-            android:layout_marginTop="69dp"
             app:layout_constraintEnd_toEndOf="@+id/textView16"
             app:layout_constraintStart_toStartOf="@+id/textView16"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -62,7 +66,7 @@
             android:id="@+id/textField"
             android:layout_width="649dp"
             android:layout_height="82dp"
-            android:hint="items ordered"
+            android:hint="Items ordered"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -70,6 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="31sp"
+                android:fontFamily="@font/font"
                 android:textAllCaps="true"
                 android:inputType="none" />
 

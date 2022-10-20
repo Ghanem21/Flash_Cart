@@ -53,13 +53,13 @@
             android:layout_width="632dp"
             android:layout_height="632dp"
             android:layout_marginEnd="67dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView5"
+            app:layout_constraintBottom_toTopOf="@+id/next_img"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/welcome_phone" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/next_img"
             android:layout_width="99dp"
             android:layout_height="51dp"
             android:layout_marginEnd="67dp"
