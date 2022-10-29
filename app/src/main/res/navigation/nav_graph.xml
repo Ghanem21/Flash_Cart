@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/welcomeFragment">
+    app:startDestination="@id/checkoutFragment">
 
     <fragment
         android:id="@+id/welcomeFragment"
@@ -28,4 +28,16 @@
         android:name="com.example.flashcart.ConnectCartToPhoneFragment"
         android:label="ConnectCartToPhoneFragment"
         tools:layout="@layout/fragment_connect_cart_to_phone"/>
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.flashcart.CheckoutFragment"
+        android:label="CheckoutFragment"
+        tools:layout="@layout/checkout_fragment">
+        <action
+            android:id="@+id/action_checkoutFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_checkoutFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
 </navigation>
