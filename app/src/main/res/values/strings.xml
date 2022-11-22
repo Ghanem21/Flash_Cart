@@ -7,7 +7,8 @@
     <string name="you_re_agreeing_to_our_terms">you\'re agreeing to our Terms</string>
     <string name="to_connect_the_cart_on_your_phone">To connect the cart on your phone:</string>
     <string name="how_to_connect1">1. Open the app on your phone\n2. Tap <b>Menu</b></string>
-    <string name="how_to_connect2">&amp; select <b>Link Cart</b></string>>
+    <string name="how_to_connect2">&amp; select <b>Link Cart</b></string>
+    >
     <string name="how_to_connect3">3. Tab on <b>Link Cart</b></string>
     <string name="how_to_connect4">4. Point your phone to this screen \nto capture the code</string>
     <string name="reload">Reload</string>
@@ -16,4 +17,8 @@
     <string name="you_re_all_set3">&amp; we\'ll email your receipt</string>
     <string name="view_receipt">View Receipt</string>
     <string name="logout">Logout</string>
+    <string name="recommended">Recommended</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="ingredient">Ingredient</string>
+    <string name="offers">Offers</string>
 </resources>
