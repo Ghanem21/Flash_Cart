@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_nav_graph"
-    app:startDestination="@id/welcomeFragment2">
-
+    app:startDestination="@id/recommendedFragment">
     <fragment
-        android:id="@+id/welcomeFragment2"
-        android:name="com.example.flashcart.WelcomeFragment"
-        android:label="WelcomeFragment" />
+        android:id="@+id/recommendedFragment"
+        android:name="com.example.flashcart.RecommendedFragment"
+        android:label="fragment_recommanded"
+        tools:layout="@layout/fragment_recommanded" />
+    <fragment
+        android:id="@+id/suggestionFragment"
+        android:name="com.example.flashcart.SuggestionFragment"
+        android:label="fragment_suggestion"
+        tools:layout="@layout/fragment_suggestion" />
+    <fragment
+        android:id="@+id/ingredientFragment"
+        android:name="com.example.flashcart.IngredientFragment"
+        android:label="fragment_ingredient"
+        tools:layout="@layout/fragment_ingredient" />
+    <fragment
+        android:id="@+id/offerFragment"
+        android:name="com.example.flashcart.OfferFragment"
+        android:label="fragment_offer"
+        tools:layout="@layout/fragment_offer" />
 </navigation>

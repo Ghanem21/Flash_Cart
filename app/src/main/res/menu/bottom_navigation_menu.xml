@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/recommendationList"
+        android:id="@+id/recommendedFragment"
         android:enabled="true"
         android:icon="@drawable/recommended_icon"
         android:title="@string/recommended"/>
     <item
-        android:id="@+id/suggestionList"
+        android:id="@+id/suggestionFragment"
         android:enabled="true"
         android:icon="@drawable/suggestion_icon"
         android:title="@string/suggestion"/>
 
     <item
-        android:id="@+id/ingredientList"
+        android:id="@+id/ingredientFragment"
         android:enabled="true"
         android:icon="@drawable/ingredient"
         android:title="@string/ingredient"/>
     <item
-        android:id="@+id/offerList"
+        android:id="@+id/offerFragment"
         android:enabled="true"
         android:icon="@drawable/offers_icon"
         android:title="@string/offers"/>
