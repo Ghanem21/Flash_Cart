@@ -13,13 +13,14 @@
         tools:context=".MainFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/corner"
-            android:paddingTop="10dp"
             android:paddingHorizontal="2dp"
+            android:paddingTop="10dp"
             android:paddingBottom="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,9 +33,9 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/top_round_corner"
                 app:elevation="-16dp"
-                app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment"
-                app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
-                app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
+                app:layout_constraintBottom_toTopOf="@+id/second_nav_host_fragment"
+                app:layout_constraintEnd_toEndOf="@+id/second_nav_host_fragment"
+                app:layout_constraintStart_toStartOf="@+id/second_nav_host_fragment"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
                 app:layout_constraintVertical_chainStyle="packed">
@@ -66,15 +67,29 @@
                 android:id="@+id/bottom_navigation"
                 android:layout_width="432dp"
                 android:layout_height="75dp"
-                app:itemIconSize="40dp"
                 android:background="@drawable/bottom_round_corner"
                 app:elevation="-16dp"
+                app:itemIconSize="40dp"
                 app:labelVisibilityMode="labeled"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
-                app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
-                app:layout_constraintTop_toBottomOf="@+id/nav_host_fragment"
+                app:layout_constraintEnd_toEndOf="@+id/second_nav_host_fragment"
+                app:layout_constraintStart_toStartOf="@+id/second_nav_host_fragment"
+                app:layout_constraintTop_toBottomOf="@+id/second_nav_host_fragment"
                 app:menu="@menu/bottom_navigation_menu" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/checkout_button"
+            android:layout_width="210dp"
+            android:layout_height="68dp"
+            android:text="@string/checkout"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/light_red"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="32dp"
+            android:textSize="32sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

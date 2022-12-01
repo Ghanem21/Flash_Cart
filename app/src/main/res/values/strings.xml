@@ -21,4 +21,8 @@
     <string name="suggestion">Suggestion</string>
     <string name="ingredient">Ingredient</string>
     <string name="offers">Offers</string>
+    <string name="checkout">Checkout</string>
+    <string name="confirmation_checkout">Confirmation Checkout</string>
+    <string name="body_of_checkout">You sure, that you want to checkout?</string>
+    <string name="cancel">Cancel</string>
 </resources>

@@ -16,5 +16,6 @@
     <color name="green_text">#4CAF50</color>
     <color name="green_button">#66BB6A</color>
     <color name="red">#EF5350</color>
+    <color name="light_red">#ef5350</color>
 
 </resources>

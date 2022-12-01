@@ -27,12 +27,20 @@
         android:id="@+id/connectCartToPhoneFragment"
         android:name="com.example.flashcart.ConnectCartToPhoneFragment"
         android:label="ConnectCartToPhoneFragment"
-        tools:layout="@layout/fragment_connect_cart_to_phone"/>
+        tools:layout="@layout/fragment_connect_cart_to_phone">
+        <action
+            android:id="@+id/action_connectCartToPhoneFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.flashcart.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
     <fragment
         android:id="@+id/checkoutFragment"
         android:name="com.example.flashcart.CheckoutFragment"
