@@ -25,4 +25,7 @@
     <string name="confirmation_checkout">Confirmation Checkout</string>
     <string name="body_of_checkout">You sure, that you want to checkout?</string>
     <string name="cancel">Cancel</string>
+    <string name="add_item">Add Item</string>
+    <string name="add_item_to_cart">Add Item To Cart</string>
+    <string name="type_product_code">Type Product Code</string>
 </resources>

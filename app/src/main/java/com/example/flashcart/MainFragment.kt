@@ -49,6 +49,20 @@ class MainFragment : Fragment() {
 
         }
 
+        binding.addItemButton.setOnClickListener {
+            val dialog = MaterialAlertDialogBuilder(requireContext(),R.style.CheckoutDialogTheme)
+                .setView(R.layout.add_item_dialog)
+                .setNegativeButton(getString(R.string.cancel)) { dialog, _ ->
+                    dialog.dismiss()
+                }
+                .setPositiveButton(getString(R.string.add_item)) { _, _ ->
+
+                }.show()
+
+            dialog.getButton(Dialog.BUTTON_NEGATIVE).setTextSize(TypedValue.COMPLEX_UNIT_SP, 21.0f)
+            dialog.getButton(Dialog.BUTTON_POSITIVE).setTextSize(TypedValue.COMPLEX_UNIT_SP, 21.0f)
+        }
+
         return binding.root
     }
 }
