@@ -6,7 +6,7 @@
     app:startDestination="@id/recommendedFragment">
     <fragment
         android:id="@+id/recommendedFragment"
-        android:name="com.example.flashcart.RecommendedFragment"
+        android:name="com.example.flashcart.recommended.RecommendedFragment"
         android:label="fragment_recommanded"
         tools:layout="@layout/fragment_recommanded" />
     <fragment
