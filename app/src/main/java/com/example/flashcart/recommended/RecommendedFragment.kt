@@ -25,7 +25,7 @@ class RecommendedFragment : Fragment() {
 
     private fun setupRecyclerView(view: View?) {
         val context = requireContext()
-        val productAdapter = ProductsAdapter(context, ProductsRecommended.productsList!!)
+        val productAdapter = ProductsAdapter(ProductsRecommended.productsList!!)
 
         val recyclerView = view?.findViewById<RecyclerView>(R.id.products_recycler_view)
         recyclerView?.adapter = productAdapter

@@ -9,10 +9,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.flashcart.R
 
-class ProductsAdapter (val context : Context, var productsList : ArrayList<RecommendedProducts>) : RecyclerView.Adapter<ProductsAdapter.ProductsViewHolder>(){
+class ProductsAdapter (var productsList : ArrayList<RecommendedProducts>) : RecyclerView.Adapter<ProductsAdapter.ProductsViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductsViewHolder {
-        val itemView = LayoutInflater.from(context).inflate(R.layout.reccomandation_item_list, parent , false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.reccomandation_item_list, parent , false)
         return ProductsViewHolder(itemView)
     }
 
