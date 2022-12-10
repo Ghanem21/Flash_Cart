@@ -1,6 +1,5 @@
 package com.example.flashcart.recommended
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,6 +36,7 @@ class ProductsAdapter (var productsList : ArrayList<RecommendedProducts>) : Recy
 
             this.currentProduct = product
             this.currentPosition = position
+
         }
 
         override fun onClick(v: View?) {
