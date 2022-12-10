@@ -2,23 +2,24 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="346dp"
-    android:layout_height="71dp"
-    app:cardElevation="5dp">
+    android:layout_width="match_parent"
+    android:layout_height="71dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/corner"
         android:paddingHorizontal="29dp"
-        android:paddingVertical="8dp"
-        android:background="@drawable/corner">
+        android:paddingVertical="8dp">
 
         <TextView
             android:id="@+id/textView7"
             style="@style/smallBlueText"
             android:text="Location:"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
             app:layout_constraintEnd_toStartOf="@+id/textView9"
             app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,9 +27,10 @@
             android:id="@+id/textView8"
             style="@style/smallBlueText"
             android:text="Price: "
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView10"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toEndOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 

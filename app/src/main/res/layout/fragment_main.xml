@@ -51,6 +51,7 @@
                     app:titleTextColor="@color/textColor" />
             </com.google.android.material.appbar.AppBarLayout>
 
+
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/second_nav_host_fragment"
                 android:name="androidx.navigation.fragment.NavHostFragment"
@@ -59,9 +60,9 @@
                 app:defaultNavHost="true"
                 app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
                 app:navGraph="@navigation/bottom_nav_graph" />
-
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation"
