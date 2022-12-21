@@ -12,6 +12,8 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.example.flashcart.databinding.FragmentMainBinding
+import com.example.flashcart.enteredProduct.EnteredProductAdapter
+import com.example.flashcart.recommended.ProductsRecommended
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
@@ -64,5 +66,18 @@ class MainFragment : Fragment() {
         }
 
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setupRecyclerView()
+    }
+
+    private fun setupRecyclerView() {
+        val productAdapter = EnteredProductAdapter()
+        ProductsRecommended.productsList?.let {
+            productAdapter.submitList(ProductsRecommended.productsList!!)
+        }
+        binding.productsRecyclerView.adapter = productAdapter
     }
 }
