@@ -1,4 +1,4 @@
-package com.example.flashcart.recommended
+package com.example.flashcart.ui_fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,32 +8,31 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.flashcart.R
+import com.example.flashcart.ui_fragments.adapters_and_data.MealsSuggestionAdapter
+import com.example.flashcart.ui_fragments.adapters_and_data.ProductsObjects
 
 
-class RecommendedFragment : Fragment() {
-
-
+class MealsSuggestionFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_recommanded, container, false)
+        val view = inflater.inflate(R.layout.fragment_meals_suggestion, container, false)
         setupRecyclerView(view)
         return view
     }
 
     private fun setupRecyclerView(view: View?) {
         val context = requireContext()
-        val productAdapter = ProductsAdapter(ProductsRecommended.productsList!!)
+        val mealsSuggestionAdapter = MealsSuggestionAdapter(ProductsObjects.mealsList!!)
 
-        val recyclerView = view?.findViewById<RecyclerView>(R.id.products_recycler_view)
-        recyclerView?.adapter = productAdapter
+        val recyclerView = view?.findViewById<RecyclerView>(R.id.meal_suggestions_recycler_view)
+        recyclerView?.adapter = mealsSuggestionAdapter
         recyclerView?.setHasFixedSize(true)
 
         val layoutManager = LinearLayoutManager(context)
         layoutManager.orientation = RecyclerView.VERTICAL
         recyclerView?.layoutManager = layoutManager
     }
-
 }

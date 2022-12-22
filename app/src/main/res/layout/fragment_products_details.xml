@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".recommended.RecommendedFragment">
+    tools:context=".ui_fragments.BestSellerFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/products_recycler_view"
+        android:id="@+id/products_details_recycler_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="3dp"
@@ -16,6 +16,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/reccomandation_item_list" />
+        tools:listitem="@layout/products_details_item_list" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

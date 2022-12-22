@@ -18,8 +18,10 @@
     <string name="view_receipt">View Receipt</string>
     <string name="logout">Logout</string>
     <string name="recommended">Recommended</string>
+    <string name="best_seller">Best Seller</string>
     <string name="suggestion">Suggestion</string>
     <string name="ingredient">Ingredient</string>
+    <string name="meals">Meals</string>
     <string name="offers">Offers</string>
     <string name="checkout">Checkout</string>
     <string name="confirmation_checkout">Confirmation Checkout</string>
@@ -28,4 +30,8 @@
     <string name="add_item">Add Item</string>
     <string name="add_item_to_cart">Add Item To Cart</string>
     <string name="type_product_code">Type Product Code</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="do_you_want_to_make">Do you want to make %s ?</string>
+    <string name="l_e_9_50"><strike>L.E 9.50</strike></string>
 </resources>

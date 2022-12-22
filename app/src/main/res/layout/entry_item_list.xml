@@ -6,7 +6,7 @@
     <data>
         <variable
             name="product"
-            type="com.example.flashcart.recommended.RecommendedProducts" />
+            type="com.example.flashcart.ui_fragments.adapters_and_data.ProductsData" />
     </data>
 
     <androidx.cardview.widget.CardView

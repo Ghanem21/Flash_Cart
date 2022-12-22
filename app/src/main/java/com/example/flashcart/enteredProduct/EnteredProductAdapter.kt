@@ -23,12 +23,12 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.flashcart.databinding.EntryItemListBinding
 import com.example.flashcart.databinding.EntryTotalItemsListBinding
-import com.example.flashcart.recommended.RecommendedProducts
+import com.example.flashcart.ui_fragments.adapters_and_data.ProductsData
 
 private const val ITEM_VIEW_TYPE_HEADER = 0
 private const val ITEM_VIEW_TYPE_ITEM = 1
 
-class EnteredProductAdapter() : ListAdapter<RecommendedProducts,
+class EnteredProductAdapter() : ListAdapter<ProductsData,
         RecyclerView.ViewHolder>(EnteredProductDiffCallback()) {
 
 
@@ -56,7 +56,7 @@ class EnteredProductAdapter() : ListAdapter<RecommendedProducts,
 
     class HeaderViewHolder(val binding: EntryItemListBinding): RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: RecommendedProducts) {
+        fun bind(item: ProductsData) {
             binding.product = item
             binding.executePendingBindings()
         }
@@ -80,7 +80,7 @@ class EnteredProductAdapter() : ListAdapter<RecommendedProducts,
     class ViewHolder private constructor(val binding: EntryTotalItemsListBinding)
         : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: RecommendedProducts) {
+        fun bind(item: ProductsData) {
             binding.product = item
             binding.executePendingBindings()
         }
@@ -101,12 +101,12 @@ class EnteredProductAdapter() : ListAdapter<RecommendedProducts,
  * Used by ListAdapter to calculate the minimum number of changes between and old list and a new
  * list that's been passed to `submitList`.
  */
-class EnteredProductDiffCallback : DiffUtil.ItemCallback<RecommendedProducts>() {
-    override fun areItemsTheSame(oldItem: RecommendedProducts, newItem: RecommendedProducts): Boolean {
+class EnteredProductDiffCallback : DiffUtil.ItemCallback<ProductsData>() {
+    override fun areItemsTheSame(oldItem: ProductsData, newItem: ProductsData): Boolean {
         return oldItem.productName == newItem.productName
     }
 
-    override fun areContentsTheSame(oldItem: RecommendedProducts, newItem: RecommendedProducts): Boolean {
+    override fun areContentsTheSame(oldItem: ProductsData, newItem: ProductsData): Boolean {
         return oldItem == newItem
     }
 }

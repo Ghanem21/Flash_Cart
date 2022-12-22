@@ -3,22 +3,22 @@
     <item
         android:id="@+id/recommendedFragment"
         android:enabled="true"
-        android:icon="@drawable/recommended_icon"
-        android:title="@string/recommended"/>
+        android:icon="@drawable/best_seller_icon"
+        android:title="@string/best_seller"/>
     <item
         android:id="@+id/suggestionFragment"
         android:enabled="true"
         android:icon="@drawable/suggestion_icon"
-        android:title="@string/suggestion"/>
+        android:title="@string/recommended"/>
 
     <item
         android:id="@+id/ingredientFragment"
         android:enabled="true"
         android:icon="@drawable/ingredient"
-        android:title="@string/ingredient"/>
+        android:title="@string/meals"/>
     <item
         android:id="@+id/offerFragment"
         android:enabled="true"
-        android:icon="@drawable/offers_icon"
+        android:icon="@drawable/offers"
         android:title="@string/offers"/>
 </menu>

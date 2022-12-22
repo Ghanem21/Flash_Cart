@@ -1,10 +1,11 @@
-package com.example.flashcart.recommended
+package com.example.flashcart.ui_fragments.adapters_and_data
 
 import com.example.flashcart.R
 
-data class RecommendedProducts(var imageId: Int, var productName: String, var description: Boolean)
+data class ProductsData(var imageId: Int, var productName: String)
+data class MealData(var mealName: String)
 
-object ProductsRecommended{
+object ProductsObjects{
     private val images = arrayListOf(
         R.drawable.thumb_4_1, R.drawable.thumb_4_2, R.drawable.thumb_4_3,
         R.drawable.thumb_4_4, R.drawable.thumb_4_7, R.drawable.thumb_4_8,
@@ -47,7 +48,7 @@ object ProductsRecommended{
     )
 
     // Returns the list of product objects to be displayed in RecommendedFragment RecyclerView
-    var productsList: ArrayList<RecommendedProducts>? = null
+    var productsList: ArrayList<ProductsData>? = null
         get() {
 
             if (field != null)      // backing 'field' refers to 'productsList' property object
@@ -58,12 +59,31 @@ object ProductsRecommended{
 
                 val imageId = images[i]
                 val productName = productNames[i]
-                val product = RecommendedProducts(imageId, productName, false)
+                val product = ProductsData(imageId, productName)
                 field!!.add(product)
             }
 
             return field
         }
+
+
+
+    var mealsList: ArrayList<MealData>? = null
+        get() {
+
+            if (field != null)
+                return field
+
+            field = ArrayList()
+            for (i in productNames.indices) {
+                val mealName = productNames[i]
+                val meal = MealData(mealName)
+                field!!.add(meal)
+            }
+
+            return field
+        }
+
 
 
 }

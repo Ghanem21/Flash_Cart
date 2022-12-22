@@ -13,7 +13,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.example.flashcart.databinding.FragmentMainBinding
 import com.example.flashcart.enteredProduct.EnteredProductAdapter
-import com.example.flashcart.recommended.ProductsRecommended
+import com.example.flashcart.ui_fragments.adapters_and_data.ProductsObjects
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
@@ -75,8 +75,8 @@ class MainFragment : Fragment() {
 
     private fun setupRecyclerView() {
         val productAdapter = EnteredProductAdapter()
-        ProductsRecommended.productsList?.let {
-            productAdapter.submitList(ProductsRecommended.productsList!!)
+        ProductsObjects.productsList?.let {
+            productAdapter.submitList(ProductsObjects.productsList!!)
         }
         binding.productsRecyclerView.adapter = productAdapter
     }

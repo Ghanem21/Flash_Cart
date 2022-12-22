@@ -6,22 +6,22 @@
     app:startDestination="@id/recommendedFragment">
     <fragment
         android:id="@+id/recommendedFragment"
-        android:name="com.example.flashcart.recommended.RecommendedFragment"
+        android:name="com.example.flashcart.ui_fragments.BestSellerFragment"
         android:label="fragment_recommanded"
-        tools:layout="@layout/fragment_recommanded" />
+        tools:layout="@layout/fragment_products_details" />
     <fragment
         android:id="@+id/suggestionFragment"
         android:name="com.example.flashcart.SuggestionFragment"
         android:label="fragment_suggestion"
-        tools:layout="@layout/fragment_suggestion" />
+        tools:layout="@layout/fragment_recommended" />
     <fragment
         android:id="@+id/ingredientFragment"
-        android:name="com.example.flashcart.IngredientFragment"
+        android:name="com.example.flashcart.ui_fragments.MealsSuggestionFragment"
         android:label="fragment_ingredient"
-        tools:layout="@layout/fragment_ingredient" />
+        tools:layout="@layout/fragment_meals_suggestion" />
     <fragment
         android:id="@+id/offerFragment"
-        android:name="com.example.flashcart.OfferFragment"
+        android:name="com.example.flashcart.ui_fragments.OfferFragment"
         android:label="fragment_offer"
         tools:layout="@layout/fragment_offer" />
 </navigation>
